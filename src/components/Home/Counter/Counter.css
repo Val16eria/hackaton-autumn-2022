@@ -1,0 +1,291 @@
+/* CONTAINER */
+.rowC1 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 100px 0;
+    padding: 0 40px 0 40px;
+}
+
+/* TEXT BIG*/
+.big-text #h2Web{
+    width: 918px;
+    height: 180px;
+    left: 44px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 150px;
+    line-height: 180px;
+}
+
+.big-text #h2edu{
+    position: absolute;
+    width: 634px;
+    height: 168px;
+    left: 206px;
+    top: 244px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 168px;
+}
+
+#black {
+    color: #000000;
+    font-family: 'TTtravelsMedium';
+}
+
+#yellow {
+    color: #FFD601;
+    font-family: 'TTtravelsMedium';
+}
+
+#gray {
+    color: #454545;
+    font-family: 'TTtravelsItalic';
+    font-size: 100px;
+}
+
+/* TEXT SMALL*/
+.small-text {
+    position: absolute;
+    width: 814px;
+    height: 116px;
+    left: 50px;
+    top: 500px;
+
+    font-family: 'TTTravelsMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: #000000;
+}
+
+/* BACKGROUNG */
+.students-img {
+    width: 100%;
+    height: 100%;
+    left: 143px;
+    top: 190px;
+}
+
+/* BUTTONS */
+section .btnsС {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+section .btnsС #cpesial {
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 23px 63px 23px 55px;
+    gap: 10px;
+
+    position: absolute;
+    width: 267px;
+    height: 70px;
+    left: 52px;
+    top: 620px;
+
+    border: 2px solid #000000;
+    border-radius: 33px;
+
+    font-size: 16px;
+    color: #000000;
+    font-family: "TTtravelsDemiBold";
+    font-weight: 600px;
+    padding: 23px 63px 23px 55px;
+}
+
+.btnsС #zayv {
+    text-decoration: none;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 23px 73px 23px 56px;
+    gap: 10px;
+
+    position: absolute;
+    width: 255px;
+    height: 70px;
+    left: 338px;
+    top: 620px;
+
+    background: linear-gradient(93.85deg, #FE6C03 26.72%, #FE1408 58.75%);
+    border-radius: 33px;
+
+
+    font-size: 16px;
+    color: #FDFDFD;
+    font-family: "TTtravelsDemiBold";
+    font-weight: 600px;
+    padding: 23px 73px 23px 56px;
+}
+
+/* CONTAINER */
+.rowC2 {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: wrap;
+    justify-content: flex-start;
+    padding: 0 0 100px 0;
+    padding: 40px 40px 0 40px;
+}
+
+/* ICONS */
+.icons li {
+    /*position: relative;*/
+    list-style-type: none;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: inline-block;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0px 0px 0 20px;
+}
+
+.icons ul{
+    padding: 0;
+}
+
+.icon-v li{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    left: 52px;
+    top: 817px;
+}
+
+.icon-t li{ 
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    left: 169px;
+    top: 817px;
+
+}
+
+.icon-f li{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    left: 286px;
+    top: 817px;
+}
+
+/* ФОТО ВОЛНЫ */
+.walv {
+    width: 1728px;
+    height: 309px;
+    left: 1728px;
+    top: 1345px;
+    
+    background: linear-gradient(182.65deg, #0099FF -470.31%, rgba(136, 185, 218, 0.48) -189.56%, rgba(196, 220, 236, 0.739003) -39.34%, #F2F2F2 89.26%);
+    transform: rotate(-180deg);
+}
+
+/* НОВОСТИ */
+.news-text {
+    width: 282px;
+    height: 77px;
+    left: 722px;
+    top: 1266px;
+    margin-bottom: 30px;
+}
+
+.news-text h2{
+    
+    font-family: 'TTTravelsDemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    /* identical to box height */
+
+    letter-spacing: -0.025em;
+
+    color: #414040;
+}
+
+/* ФОТО НОВОСТИ */
+.walv-img {
+    width: 100%;
+    height: 100%;
+    left: 50px;
+    top: 1401px;
+}
+
+#new1{
+    width: 50%;
+    height: 50%;
+    left: 50px;
+    top: 2605px;
+}
+
+#new2{
+    width: 50%;
+    height: 50%;
+    left: 874px;
+    top: 2605px;
+}
+
+/* ПРОЕКТЫ */
+.project-text {
+    width: 475px;
+    height: 77px;
+    left: 604px;
+    top: 2470px;
+    margin-top: 309px;
+    margin-bottom: 30px;
+}
+
+.project-text h2{
+    
+    font-family: 'TTTravelsDemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    /* identical to box height */
+
+    letter-spacing: -0.025em;
+
+    color: #414040;
+}
+
+.sslka {
+    position: absolute;
+
+    width: 333px;
+    height: 38px;
+    left: 1203px;
+    top: 2084px;
+    font-family: 'TTTravelsRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+
+    color: #000000;
+
+    text-decoration: none;
+}
+

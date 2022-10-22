@@ -1,0 +1,97 @@
+/* HEADER */
+header {
+    max-width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 30px 40px 20px 40px;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LOGO */
+.logo {
+    max-width: 250px;
+    display: block;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+/* MENU */
+.nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    font-family: "TTtravelsMedium";
+}
+
+.nav ul {
+    padding-inline-start: 0;
+}
+
+.mnu-top {
+    list-style-type: none;
+}
+
+.mnu-top li {
+    display: inline-block;
+    margin: 0 35px 0 35px;
+}
+
+.mnu-top li a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* EYE */
+.eye {
+    width: 47px;
+    height: 47px;
+    left: 1342px;
+    top: 59px;
+}
+
+/* BUTTON */
+header .btnsH {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+header .btnsH #aEye {
+    width: 47px;
+    height: 47px;
+    left: 1342px;
+    top: 59px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+header .btnsH #aButton {
+    background: linear-gradient(93.85deg, #FE6C03 26.72%, #FE1408 58.75%);
+    border-radius: 33px;
+    text-decoration: none;
+}
+
+header .btnsH .btnH {
+    font-size: 16px;
+    color: #FDFDFD;
+    font-family: "TTtravelsDemiBold";
+    font-weight: 600px;
+    padding: 18px 42px;
+}
+
