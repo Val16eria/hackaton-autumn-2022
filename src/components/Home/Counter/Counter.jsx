@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Counter.css";
 
 const Counter = () => {
@@ -34,12 +35,12 @@ const Counter = () => {
                 <div className="rowC2">
                     {/* ДВЕ КНОПКИ */}
                     <div className="btnsС">
-                        <a id ="cpesial" href="/" className="btnС1">
+                        <NavLink id ="cpesial" to="/" className="btnС1">
                             Специальности
-                        </a>
-                        <a id ="zayv" href="/" className="btnС2">
+                        </NavLink>
+                        <NavLink id ="zayv" to="/" className="btnС2">
                             Подать заявку
-                        </a>
+                        </NavLink>
                     </div>
 
                     {/* ИКОНКИ */}
@@ -47,21 +48,21 @@ const Counter = () => {
                         <ul>
                         {/* ВКОНТАКТЕ */}
                             <li className="icon-v">
-                                <a href="/">
+                                <NavLink to="/">
                                     <img src="../../assets/Image/page/vk.svg" alt="vk" />
-                                </a>
+                                </NavLink>
                             </li>
                             {/* ТЕЛЕГРАММ */}
                             <li className="icon-t">
-                                <a href="/">
+                                <NavLink to="/">
                                     <img src='../../assets/Image/page/tg.svg' alt="telegram" />
-                                </a>
+                                </NavLink>
                             </li>
                             {/* ФЕЙСБУК */}
                             <li className="icon-f">
-                                <a href="/">
+                                <NavLink to="/">
                                     <img src="../../assets/Image/page/face.svg" alt="facebook" />
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -83,9 +84,9 @@ const Counter = () => {
                         <img src='../../assets/Image/page/door.svg' alt="door"/>
                     </div>
 
-                    <a id ="" href="/" className="sslka">
+                    <NavLink id ="" to="/" className="sslka">
                         Остальные новости →
-                    </a>
+                    </NavLink>
 
                     {/* ФОТО */}
                         <div className="project-text">

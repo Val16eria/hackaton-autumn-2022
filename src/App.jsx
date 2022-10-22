@@ -1,6 +1,10 @@
-import Header from "./components/Home/Header/Header";
+import {Routes, Route} from "react-router-dom";
+
 import Counter from "./components/Home/Counter/Counter";
-import Footer from "./components/Home/Footer/Footer";
+import Autorization from "./components/Authorization/Autorization";
+
+import Header from "../src/components/Home/Header/Header";
+import Footer from "../src/components/Home/Footer/Footer";
 
 // СТИЛИ
 const wrapper = {
@@ -13,7 +17,12 @@ const App = () =>
   return (
     <div style={wrapper}>
       <Header />
-      <Counter />
+
+            <Routes>
+              <Route path="/" element={<Counter />}/>
+              <Route path="/autorization" element={<Autorization />}/>
+            </Routes>
+
       <Footer />
     </div>
   );

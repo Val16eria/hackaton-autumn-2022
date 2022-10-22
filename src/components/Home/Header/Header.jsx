@@ -1,15 +1,15 @@
 import "./Header.css";
 import { HeaderData } from "../../../__mocks__/Header/HeaderData";
-
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <header id="header">
             {/* ЛОГОТИП */}
             <div className="logo">
-                <a href="/">
+                <NavLink to="/">
                     <img src="../../assets/Image/page/Logo.svg" alt="logo" />
-                </a>
+                </NavLink>
             </div>
             {/* ВКЛАДКИ */}
             <div className="nav">
@@ -21,12 +21,12 @@ const Header = () => {
             </div>
             {/* ВОЙТИ */}
             <div className="btnsH">
-                <a id ="aEye" href="/">
+                <NavLink id ="aEye" to="/">
                     <img src="../../assets/Image/page/eye.svg" alt="eye" />
-                </a>
-                <a id ="aButton" href="/" className="btnH">
+                </NavLink>
+                <NavLink  id ="aButton" className="btnH" to="/autorization">
                     Авторизация
-                </a>
+                </NavLink>
             </div>
         </header>
     );
