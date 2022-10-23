@@ -92,7 +92,7 @@ form #password{
 
 .btAu {
     position: absolute;
-    width: 72px;
+    width: 76px;
     height: 73px;
     left: 720px;
     top: 560px;
@@ -102,4 +102,28 @@ form #password{
     position: absolute;
     top: 490px;
     margin: 10px 100px;
+}
+
+::-webkit-input-placeholder {
+    text-align:center;
+    }
+    
+:-moz-placeholder { /* Firefox 18- */
+    text-align:center;  
+}
+    
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align:center;  
+}
+    
+:-ms-input-placeholder {  
+    text-align:center; 
+}
+
+form a {
+    text-decoration: none;
+    font-size: 11px;
+    width: 90px;
+    font-family: "TTtravelsRegular";
+    color: #727272;
 }

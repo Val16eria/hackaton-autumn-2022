@@ -12,7 +12,7 @@ const Autorization = () => {
                             <input type="text" name="fio" placeholder="ФИО" id="fio"/>
                             <input type="text" name="login" placeholder="Логин" id="login"/>
                             <input type="password" name="password" placeholder="Пароль" id="password"/>
-                            
+
                             <div className="bott">
                                 <input type="radio" id="student" name="vbr" value="tudent" />
                                 <label for="student">Студент</label>
@@ -24,8 +24,11 @@ const Autorization = () => {
                                 <label for="sotr">Сотрудник</label>
                             </div>
                             <div className="btAu">
-                                <NavLink to="/">
+                                <NavLink to="/teacher">
                                     <img src="../../assets/Image/page/bt.svg" alt="facebook" />
+                                </NavLink>
+                                <NavLink to="/">
+                                    <p>Нет аккаунта</p>
                                 </NavLink>
                             </div>
                         </form>

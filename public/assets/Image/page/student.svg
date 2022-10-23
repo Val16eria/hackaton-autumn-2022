@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='ru' dir='ltr'>
+  <head>
+    <script type="text/javascript" src="/js/loader_nav20785947539_0.js"></script>
+    <script type="text/javascript">
+      (function() {
+var alertCont;
+function trackOldBrowserEvent(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/badbrowser_stat.php?act=track&event=' + event);
+  xhr.send();
+}
+function exposeGlobals() {
+  window.hideOldBrowser = function() {
+    alertCont.remove();
+    var date = new Date();
+    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+    var expiresDate = date.toGMTString();
+    var domain = window.locDomain;
+    document.cookie = 'remixoldbshown=1; expires=' + expiresDate + '; path=/' + (domain ? '; domain=.' + domain : '') + ';secure';
+    trackOldBrowserEvent('hideAlert_atom');
+  }
+}
+function checkOldBrowser() {
+  if(!document.body) {
+    setTimeout(checkOldBrowser, 100);
+    return;
+  }
+  try {
+    if ((false || !('noModule' in HTMLScriptElement.prototype)) && !false) {
+      exposeGlobals();
+      var alert = '<div class="OldBrowser__container OldBrowser__container--atom" style="width:960px;">  Ваш браузер устарел. Попробуйте <a href="https://vk.com/away.php?to=https%3A%2F%2F1l-go.mail.ru%2Fr%2Fadid%2F3245029_2013344%2Fpid%2F102819%2Fpof%2F1%2Ff%2F3%2F%3F_1larg_sub%3D505021%26utm_source%3Dvk%26utm_medium%3Dbanner%26utm_campaign%3DExpVKGameLine_all_all_all_standart%26utm_content%3Datom%26rfr%3D505021&badbrowser=atom&badbrowser_meta=_badbrowser_alert" target="_blank">браузер Atom</a>, чтобы работа ВКонтакте была быстрой и стабильной. <a href="https://vk.com/away.php?to=https%3A%2F%2F1l-go.mail.ru%2Fr%2Fadid%2F3245029_2013344%2Fpid%2F102819%2Fpof%2F1%2Ff%2F3%2F%3F_1larg_sub%3D505021%26utm_source%3Dvk%26utm_medium%3Dbanner%26utm_campaign%3DExpVKGameLine_all_all_all_standart%26utm_content%3Datom%26rfr%3D505021&badbrowser=atom&badbrowser_meta=_badbrowser_alert" target="_blank">Подробнее</a>  <span class="OldBrowser__close" aria-label="Закрыть" role="button" onclick="hideOldBrowser();"></span></div>';
+      alertCont = document.createElement('div');
+      alertCont.className = 'OldBrowser';
+      alertCont.id = 'old_browser_wrap';
+      alertCont.innerHTML = alert;
+      document.body.appendChild(alertCont);
+      trackOldBrowserEvent('showAlert_atom');
+    }
+  } catch(e) {}
+}
+setTimeout(checkOldBrowser, 0);
+})();
+var vk = {
+  ads_rotate_interval: 120000,
+  al: parseInt('3') || 4,
+  id: 612236426,
+  sex: 1,
+  intnat: '' ? true : false,
+  host: 'vk.com',
+  __domain: 'vk.com',
+  loginDomain: 'https://login.vk.com/',
+  logoutUrl: 'https://login.vk.com/?act=logout&hash=b2be973bdc054099ff&_origin=https%3A%2F%2Fvk.com&lrt=BDpxh3TFcr2KJa2-sb_NXAJWrhHOz5-cP5JdDlK-r4k',
+  lang: 0,
+  statsMeta: {"platform":"web2","st":false,"time":1666480192,"hash":"DdOhHjxdIXscdrLz5Y3kW6pDn5WA0xUqo3A0O4hmTrs","reloadVersion":0},
+  loaderNavSection: '',
+  rtl: parseInt('') || 0,
+  version: 5949617,
+  stDomains: 0,
+  stDomain: 'https://st1-19.vk.com',
+  navDomain: "",
+  navPostfix: "",
+  wsTransport: 'https://stats.vk-portal.net',
+  stExcludedMasks: ["loader_nav","lang","sw\/"],
+  zero: false,
+  contlen: 0,
+  loginscheme: 'https',
+  ip_h: 'be66e9edbf1ee122b1',
+  navPrefix: '/',
+  dt: parseInt('0') || 0,
+  fs: parseInt('11') || 13,
+  ts: 1666480192,
+  tz: 10800,
+  vcost: 7,
+  time: [2022, 10, 23, 2, 9, 52],
+  sampleUser: -1, spentLastSendTS: new Date().getTime(),
+  a11y: 0,
+  statusExportHash: '',
+  audioAdsConfig: {"_":"_"},
+  longViewTestGroup: "page_view",
+  cma: 1,
+  lpConfig: {
+    enabled: 1,
+    key: 'b7c7c2260780f246d999d0a765af365e6feb4869',
+    ts: 1749039751,
+    url: 'https://im.vk.com/nim612236426',
+    lpstat: 0,
+    sseUrl: 'https://papi.vk.com/pushsse/ruim'
+  },
+
+  pr_tpl: "<div class=\"pr %cls%\" id=\"%id%\"><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><div class=\"pr_bt\"><\/div><\/div>",
+  push_hash: '90fa7461b2dcab0797',
+
+  audioInlinePlayerTpl: "",
+
+  pe: {"vk_apps_svg_qr":1,"upload.send_upload_stat":1,"push_notifier":1,"notify_new_events_box":1,"mini_apps_web_add_to_favorites":1,"mini_apps_m_web_new_stub_page":1,"cookie_class_samesite":1,"cookie_secure_default_true":1,"measure_module_navigation_stats":1,"measure_module_navigation_stats_mvk":1,"stickers_bot_link":1,"story_reactions_sending_feature_web":1,"widgets_xdm_same_origin":1,"stickers_money_transfer_suggestions":1,"web2_story_box_enabled":1,"navigation_timespent":1,"market_item_recommendations_view_log":1,"market_item_others_view_log":1,"web_stats_transport_story_view":1,"registration_item_stat":1,"mvk_lazy_static_reload":1,"mute_mvk_err_peaks":1,"notifications_view_new":1,"ads_market_autopromotion_bookmarks_stats":1,"print_stickers_updated":1,"mini_apps_web_call_api_form_data":1,"groups_category_gender_choose":1,"web_new_photo_editor":1,"web_new_photo_editor_crop":1,"web_photo_editor_hide_entrypoint":1,"web_stats_try_send":1,"expand_web_vitals_grade":1,"profile_questions_enabled":1,"update_private_snippets_by_queue":1,"stickers_catalog_reload_after_buy":1,"web_stats_send_on_events_limit":1,"batchify_web_stats":1,"sentry_js_sanitize_frames":1,"sentry_js_server_errors_integration":1,"sentry_js_handled_errors_integration":1,"sentry_js_known_issues_mvk_integration":1,"sentry_js_known_issues_web_integration":1,"sentry_js_web_timeouts_forwarding":1,"sentry_js_web_verbose":1,"sentry_js_inline_scripts":1,"sentry_js_reference_errors":1,"stickers_web_new_ui":1,"ads_new_reports_web_tgb":1,"ads_autopromotion_web_geo":1,"recognize_mock_turn_off":1,"photo_recognition_web":1,"aliexpress_app_links_with_partner_links":1,"ads_new_reports_web_histories":1,"ads_new_reports_mvk_histories":1,"audio_unauth_preview":1,"ads_easy_promote_goods_new_create_api":1,"messenger_web_themes_easter_egg":1,"mail_history_unread_counter_observer":1,"messenger_empty_pinned_support":1,"force_act_in_get_params":1,"market_suggest_search_queries":1,"mini_apps_action_menu_mvk":1,"direct_games_safari_view_controller":1,"mail_longpoll_unread_counter":1,"faq_clean_up_extra_spaces":1,"loginvk_unauthorized_force_logout":1,"loginvk_api_use_anonymous_token":1,"mail_fastchat_reforged":1,"inline_attaches_icons":1,"mvk_quick_search_canceled_requests":1,"apps_games_catalog_my_games_cloud":1,"mail_new_conversation_stickers_hint":1,"test_folder_masks":1,"simplified_start_conversation":1,"microlandings_marketing_blocks":1,"js_errors_no_write_uncaught_errors":1,"fav_dialog_with_yourself":1,"tns_track_sections":1,"mvk_lite_enabled":1,"mvk_watch_css_selectors":1,"mail_business_notify":1,"im_message_editable_sync":1,"mail_dialog_list_menu":1,"mail_new_ui_banner":1,"messages_new_empty_dialog_screen":1,"me_fc_pinned_message":1,"me_new_ads_module_detect":1,"im_clocks_fix":1,"similar_groups_after_unsubscribe":1,"market_albums_autopromotion_modal":1,"market_related_items":1,"empty_tab_history_check":1,"mvk_redirect_to_app_without_target_url":1,"mvk_vkui_search":1,"mvk_api_prefetch":1,"one_item_post_promotion_entrypoints":1,"ecomm_web_classifieds_profile":1,"waf_ajax_request_enabled":1,"cookie_lite_js_save_stat":1,"longread_tts_web_player":1,"mvk_waf_ajax_request_enabled":1,"groups_settings_tooltip":1,"classified_item_card_similar_products":1,"nospam_new_histogram":1,"messenger_make_away_link_useful":1,"search_mvk_menu_link":1,"vmoji":1,"market_add_to_bookmarks_analytics_new":1,"article_multilists":1,"apps_skip_lazy_static_reload_mvk":1,"article_text_drag":1,"analytics_web_item_creation":1,"market_view_item_analytics_new":1,"stickers_keywords_idb_cache":1,"market_transition_to_item_analytics_new":1,"market_item_card_cta_v2":1,"market_send_message_to_owner_analytics_new":1,"adsedit_legal_modal_enable_dealer_fields":1,"mvk_profile_redesign_old_posting":1,"ajax_request_parse_html_error":1,"profile_redesign_onboarding":1,"search_force_update_search_friends_on_filter_change":1},
+  ex: [],
+  acl: [],
+  countryISO: 'RU',
+  apiConfigDomains: {
+    domain: 'vk.com',
+    apiDomain: 'api.vk.com',
+    loginDomain: 'login.vk.com',
+    connectDomain: 'id.vk.com',
+  },
+
+  isCallsDevEnv: '' ? true : false,
+};
+      var StaticFiles = {'lite.js':{v:104},'al/docs_preview.159d50115b980808861d.css':{v:''},'docs_preview.css':{v:1},'dist/polyfills.3ec5f706676b6a635fa9.js':{v:'3525b1ef99a08ef6b73f'},'dist/sentry.31a183c279b5266f0adf.js':{v:'c7e20e236c95031974e3'},'dist/react.d61a856f521b08e0b588.js':{v:'2fcc60503dc365b4d204'},'dist/palette.74a6f6ab5ef568aac48f.js':{v:'913dd8f07e28ea9c5b27'},'dist/audioplayer.cee4b3c9269b0e750a85.js':{v:'298125cfdb72d6f81dcc7d9'},'dist/common.8fa92f7aea711e5d08df.js':{v:'2985c94594fa99b912cb7dd'},'dist/web/docs.881c54183794bf47706d.js':{v:''},'dist/web/docs.js':{v:1}};
+    </script>
+    <meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light"><link rel="shortcut icon" href="/images/icons/favicons/fav_logo.ico?6" /><link type="text/css" rel="stylesheet" href="/css/al/common.d5ec8b799fc65a71c064.css" /><link type="text/css" rel="stylesheet" href="/css/al/base.1ba79ff8491515d57936.css" /><link type="text/css" rel="stylesheet" href="/css/al/vkui.550cfb98b4cea8d84269.css" /><link type="text/css" rel="stylesheet" href="/css/al/fonts_utf.2546d253c69649b0561c.css" /><link type="text/css" rel="stylesheet" href="/css/al/fonts_cnt.2ed2de7040c5dd011574.css" /><meta name="robots" content="noindex,nofollow" /><title>11.png</title><script type="text/javascript" src="https://st1-19.vk.com/js/al/lite.js?104"></script><link type="text/css" rel="stylesheet" href="https://st1-19.vk.com/css/al/docs_preview.159d50115b980808861d.css" /><script type="text/javascript" src="https://st1-19.vk.com/dist/polyfills.3ec5f706676b6a635fa9.js?3525b1ef99a08ef6b73f"></script><script type="text/javascript" src="https://st1-19.vk.com/dist/sentry.31a183c279b5266f0adf.js?c7e20e236c95031974e3"></script><script type="text/javascript" src="https://st1-19.vk.com/dist/react.d61a856f521b08e0b588.js?2fcc60503dc365b4d204"></script><script type="text/javascript" src="https://st1-19.vk.com/dist/palette.74a6f6ab5ef568aac48f.js?913dd8f07e28ea9c5b27"></script><script type="text/javascript" src="https://st1-19.vk.com/dist/audioplayer.cee4b3c9269b0e750a85.js?298125cfdb72d6f81dcc7d9"></script><script type="text/javascript" src="https://st1-19.vk.com/dist/common.8fa92f7aea711e5d08df.js?2985c94594fa99b912cb7dd"></script><link type="text/css" rel="stylesheet" href="https://st1-19.vk.com/dist/web/docs.d8e947322016cc01dc7f.css" /><script type="text/javascript" src="https://st1-19.vk.com/dist/web/docs.881c54183794bf47706d.js?"></script>
+  </head>
+
+  <body scheme="vkcom_dark">
+    <noindex>
+      <div id="system_msg" class="fixed"></div>
+      <div id="utils"></div>
+      <div id="box_layer_bg" class="fixed"></div><div id="box_layer_wrap" class="scroll_fix_wrap fixed"><div id="box_layer"><div id="box_loader"><div class="loader"></div><div class="back"></div></div></div></div>
+      <div id="stl_left"></div><div id="stl_side"></div>
+      </div>
+      <script type="text/javascript">
+        domStarted();
+      </script>
+      <div class="docs_panel_wrap">
+  <div class="docs_panel">
+    <div class="clear_fix" style="padding: 10px 20px;">
+      <div class="docs_panel_buttons fl_r"><button class="FlatButton FlatButton--secondary FlatButton--size-m SaveToDocsButton" type="button" onclick="return Docs.saveToDocs(&#39;QxqA1w4Bb0Mw5ulOYIyo3YZu5BLIHDwBNWtKxeZVRmz&#39;, &#39;EQPGJUaHX0X5ZqZ0WFYI7x4TNQxF0fmcnKlzWe9eZJ8&#39;)" >
+  <span class="FlatButton__in">
+    <span class="FlatButton__before"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path fill="currentColor" d="M9 9v4a1 1 0 1 1-2 0V9H3a1 1 0 1 1 0-2h4V3a1 1 0 1 1 2 0v4h4a1 1 0 1 1 0 2H9Z"/></svg></span>
+    <span class="FlatButton__content">Сохранить к себе</span>
+    
+  </span>
+</button><button class="FlatButton FlatButton--primary FlatButton--size-m" type="button" onclick="return Docs.saveDoc()" >
+  <span class="FlatButton__in">
+    
+    <span class="FlatButton__content">Скачать файл</span>
+    
+  </span>
+</button></div>
+      <div class="docs_info fl_r"></div>
+      <a class="docs_name fl_l" onclick="return Docs.saveDoc();"><b>11.png</b></a>&nbsp;
+    </div>
+  </div>
+</div><center><img src="https://psv4.userapi.com/c237331/u487451001/docs/d51/7014033936b6/11.png?extra=Rp3iEYrtaKJOG2yUGoPULoxszNaQWGjgRilUlr2Uk4as4I35crFfDZwwEaEZg72T_Hb1YhCzF2bC35Nd6psx7hFpinjWXykAhPO5ccTDFtketbYh4iXl5t2IDzP0GypFxWB8H7623JAX8L84Zaj7oSUd7Q" class="can_zoom" onclick="Docs.imgZoom(this);" /></center>
+      <script type="text/javascript">
+        domReady();
+        
+ addLangKeys({"docs_save_to_docs":"Сохранить к себе","docs_saved_to_docs":"Сохранено","audio_claim_delete":"удалить аудиозапись","audio_claim_delete_capital":"Удалить аудиозапись","audio_claim_objection":"заполнив специальную форму","audio_claim_warning":"Аудиозапись {audio} была изъята из публичного доступа в связи с обращением правообладателя.","audio_claim_warning_title":"Спорная аудиозапись","audio_claimed_geo":"Аудиозапись {audio} недоступна для прослушивания в вашем регионе.","audio_claimed_replacement_available":"Аудиозапись была заблокирована по требованию правообладателя. Вы можете заменить её на оригинальную аудиозапись правообладателя <b>{original}<\/b>.","audio_replace_with_original":"Заменить","audio_site_rules_violation_header":"Запрещённая аудиозапись","audio_site_rules_violation_warning":"Аудиозапись {audio} была изъята из публичного доступа в связи с нарушением правил сайта.","box_close":"Закрыть","box_no":"Нет","box_send":"Отправить","box_yes":"Да","calls_are_you_sure_to_call_this_user":"Вы уверены, что хотите позвонить пользователю?","captcha_cancel":"Отмена","captcha_enter_code":"Введите код с картинки","captcha_send":"Отправить","docs_add_to_group_tt":"Добавить в документы сообщества","docs_add_tt":"Добавить файл","docs_claimed_doc_hint":"Файл изъят из публичного доступа и доступен только вам","docs_edit_tt":"Редактировать файл","docs_empty_search":"В ваших файлах по запросу «%s» ничего не найдено","docs_no_group_docs":"Здесь будут отображаться файлы сообщества.","docs_no_user_docs":"Здесь будут отображаться ваши файлы.","docs_remove_tt":"Удалить файл","docs_upload_arch_fail":"Архив содержит недопустимый файл и не может быть загружен в раздел «Документы».","docs_upload_arch_mp3_fail":"Архив содержит mp3-файл и не может быть загружен в раздел «Документы».<br>Для загрузки mp3-файла воспользуйтесь разделом «Музыка».","docs_upload_fail":"Не удалось загрузить файл. Файл не должен быть исполняемым, а его размер не должен превышать 2 ГБ.","docs_upload_mp3_fail":"Загрузка mp3-файлов в файлы недоступна.<br>Для загрузки воспользуйтесь разделом «Музыка».","docs_upload_music_fail":"Невозможно загрузить в документы файл этого типа.","global_action_confirmation":"Подтверждение действия","global_add_media":"Прикрепить","global_apps":"Приложения","global_audio_only_with_subscription_btn":"Узнать больше","global_audio_only_with_subscription_text":"Так решил музыкант или его представитель. Купите подписку и получите доступ к расширенному каталогу музыки.","global_audio_only_with_subscription_title":"Аудиозапись доступна с подпиской","global_back":"Назад","global_box_error_title":"Ошибка","global_box_title_back":"Назад","global_cancel":"Отмена","global_captcha_input_here":"Введите код","global_chats":"Диалоги","global_close":"Закрыть","global_communities":"Сообщества","global_date":["","{day} {month} {year}","вчера","сегодня","завтра"],"global_date_l":["","{day} {month} {year}","вчера","сегодня","завтра"],"global_delete":"Удалить","global_error":"Ошибка","global_error_occured":"Произошла ошибка","global_friends":"Друзья","global_hours_ago":["","%s час назад","%s часа назад","%s часов назад"],"global_just_now":"только что","global_mins_ago":["","%s минуту назад","%s минуты назад","%s минут назад"],"global_money_amount_rub":["","%s рубль","%s рубля","%s рублей"],"global_news_search_results":"Результаты поиска в новостях","global_recaptcha_title":"Подтверждение действия","global_secs_ago":["","%s секунду назад","%s секунды назад","%s секунд назад"],"global_share_button_call":"Позвонить","global_short_date":["","{day} {month}","вчера","сегодня","завтра"],"global_short_date_time":["","{day} {month} в {hour}:{minute}","вчера в {hour}:{minute}","сегодня в {hour}:{minute}","завтра в {hour}:{minute}"],"global_short_date_time_l":["","{day} {month} в {hour}:{minute}","вчера в {hour}:{minute}","сегодня в {hour}:{minute}","завтра в {hour}:{minute}"],"global_show_all_results":"Показать все результаты","global_to_top":"Наверх","global_unknown_error":"Неизвестная ошибка","global_user_is_online":"онлайн","global_user_is_online_mobile":"онлайн с телефона","global_warning":"Предупреждениe","global_word_hours_ago":["","час назад","два часа назад","три часа назад","четыре часа назад","пять часов назад"],"global_word_mins_ago":["","минуту назад","две минуты назад","три минуты назад","4 минуты назад","5 минут назад"],"global_word_secs_ago":["","только что","две секунды назад","три секунды назад","четыре секунды назад","пять секунд назад"],"head_search_results":"Результаты поиска","index_error_bad_phone":"Некорректный номер телефона","index_sel_bday":"День","login_blocked_delete_page_header":"Удаление страницы","login_blocked_sure_delete_page_question":"Вы уверены, что хотите удалить свою страницу?","login_fast_unblocked_wait_description":"Страница разблокирована. Через несколько секунд Вы вновь сможете пользоваться ВКонтакте.","mail_money_transfer_cancel_btn":"Отменить перевод","mail_money_transfer_cancel_confirm":"Вы действительно хотите отменить денежный перевод?","mail_money_transfer_decline_btn":"Отклонить","mail_money_transfer_decline_confirm":"Вы действительно хотите отклонить денежный перевод?","months_of":{"1":"января","2":"февраля","3":"марта","4":"апреля","5":"мая","6":"июня","7":"июля","8":"августа","9":"сентября","10":"октября","11":"ноября","12":"декабря"},"months_sm_of":{"1":"янв","2":"фев","3":"мар","4":"апр","5":"мая","6":"июн","7":"июл","8":"авг","9":"сен","10":"окт","11":"ноя","12":"дек"},"news_fb_money_transfer_decline_btn":"Отклонить","news_fb_money_transfer_decline_confirm":"Вы действительно хотите отклонить денежный перевод?","payment_redirect":"Перенаправление на платёжную систему <b>%s<\/b>.<br>Пожалуйста, подождите...","payments_app_add_votes_delay":"Мы ожидаем подтверждение от приложения. Если оно не будет получено в течение часа, голоса будут возвращены на ваш счёт.","payments_app_order_box_title":"Передача голосов приложению","payments_back_to_offers_list":"Вернуться к списку","payments_back_to_ps_list":"Вернуться к списку","payments_bonus_votes":["","+ бонус %s голос","+ бонус %s голоса","+ бонус %s голосов"],"payments_cards_redirect":"Перенаправление на платёжный шлюз.<br>Пожалуйста, подождите...","payments_change_phone_number":"Изменить номер","payments_dont_remember_card_btn":"Нет","payments_error_invalid_email":"Указан неверный адрес электронной почты.","payments_for_get_n_votes":["","<b>%s<\/b> голоса","<b>%s<\/b> голосов","<b>%s<\/b> голосов"],"payments_get_votes_box_close_notice":"Платёж в обработке. Мы пришлём вам уведомление, когда голоса будут зачислены на ваш счёт.","payments_get_votes_delay":"Мы ожидаем ответ от платёжного шлюза. Как только мы его получим, то обязательно зачислим голоса на {link}ваш счёт{\/link}.<br><br>Если вы не получите голоса в течение часа, вы можете обратиться в {link2}платёжную техподдержку{\/link2}.","payments_get_votes_for_X":"Получить голоса за {amount}","payments_get_votes_input_phone":"Пожалуйста, укажите <b>номер телефона<\/b> для оплаты:","payments_get_votes_new":"Получить голоса","payments_get_votes_ps_enter_code":"Вам отправлено сообщение с кодом подтверждения, введите полученный код для оплаты","payments_go_change_pay_type":"Выбрать другой способ оплаты","payments_go_ps_list":"Вернуться к выбору платёжной системы","payments_instant_pay_amount_limit_error":"Недостаточно средств на счёте либо достигнут лимит на списание средств без подтверждения.<br>Для совершения оплаты с подтверждением нажмите {link}Перейти к оплате{\/link}.","payments_internet_getting_votes":"Получение голосов","payments_invalid_code":"Неверный код.","payments_landing_cancelled":"{tag_span}К сожалению, ваш платёж не был принят.{\/tag_span}<br>Пожалуйста, обратитесь в {link}Поддержку{\/link}.","payments_max_amount_limit_votes":"Максимальное количество голосов для оплаты через выбранную платежную систему — %s.","payments_min_amount_limit_votes":"Минимальное количество голосов для оплаты через выбранную платёжную систему: %s.","payments_money_for_votes":["","{money} (%s голос)","{money} (%s голоса)","{money} (%s голосов)"],"payments_money_link_btn_feature_text":"Поделитесь ссылкой или QR-кодом ВКонтакте или за его пределами, чтобы начать сбор денег","payments_money_link_tab_feature_text":"Ссылки и QR-код для сбора денег находятся здесь","payments_money_request_error_chunk_amount_too_big":"Рекомендуемая сумма не может быть больше общей суммы запроса.","payments_money_request_error_max_chunk_amount_currency":"Максимальная рекомендуемая сумма — {max_amount}","payments_money_request_error_min_chunk_amount_currency":"Минимальная рекомендуемая сумма — {min_amount}","payments_money_request_error_no_accept_card":"Пожалуйста, укажите карту для автоматического зачисления переводов.","payments_money_transfer_about_title":"Условия","payments_money_transfer_amount_limits":"Минимальная сумма перевода — {min_amount}","payments_money_transfer_btn":"Отправить деньги","payments_money_transfer_commission_undefined":"Комиссия зависит от платёжной системы карты","payments_money_transfer_error_max_amount_currency":"Максимальная сумма перевода — {max_amount}","payments_money_transfer_error_min_amount_currency":"Минимальная сумма перевода — {min_amount}","payments_money_transfer_low_balance":"Недостаточно средств","payments_money_transfer_new_card":"Новая карта","payments_money_transfer_will_be_requested":"Будет запрошено: {amount}","payments_pay_order_btn":"Оплатить","payments_payment_cancelled":"Процесс оплаты был отменён.","payments_remember_card_btn":"Да, получать на эту карту","payments_rest_amount_day_votes":"Превышена сумма лимита за день. Возможное количество голосов для оплаты через выбранную платёжную систему – %s.","payments_rest_amount_week_votes":"Превышена сумма лимита за неделю. Возможное количество голосов для оплаты через выбранную платёжную систему – %s.","payments_revoke_token_confirm":"Вы действительно хотите отвязать этот кошелёк?","payments_save_phone":"Сохранить номер","payments_service_cost":"Стоимость услуги <b>{amount}<\/b>","payments_service_cost_rubles":["","Стоимость услуги <b>%s рубль<\/b>.","Стоимость услуги <b>%s рубля<\/b>.","Стоимость услуги <b>%s рублей<\/b>."],"payments_sms_money_fail":"Ваш запрос не был обработан. Попробуйте повторить его позднее.","payments_spasibo_rules_not_accepted":"Чтобы продолжить, нужно принять условия","payments_to_get_send_sms":["","Чтобы получить <b>%s<\/b> голос, отправьте с вашего номера <b>1 SMS<\/b> с текстом <b>{text}<\/b> на номер <b>{number}<\/b>.","Чтобы получить <b>%s<\/b> голоса, отправьте с вашего номера <b>1 SMS<\/b> с текстом <b>{text}<\/b> на номер <b>{number}<\/b>.","Чтобы получить <b>%s<\/b> голосов, отправьте с вашего номера <b>1 SMS<\/b> с текстом <b>{text}<\/b> на номер <b>{number}<\/b>."],"payments_transfer_method_without_fee_for_mastercard":"Без комиссии с Mastercard для переводов от 300 руб.","payments_transfer_without_fee":"Без комиссии","payments_unbind_card_btn":"Удалить","payments_unbind_card_confirm":"Вы действительно хотите отвязать карту?","payments_vkpay_low_balance_text":"Пополните баланс без комиссии.","payments_vkpay_low_balance_title":"Недостаточно средств","payments_vkpay_topup_button":"Пополнить","payments_votes_cost_in_rubles":["","Стоимость %s рубль","Стоимость %s рубля","Стоимость %s рублей"],"payments_waiting_app_order_complete":"Ожидаем завершения платежа...","payments_waiting_payment_complete":"Ожидаем завершения оплаты...","payments_waiting_payment_complete_still":"Подождите ещё немного...","payments_waiting_transfer_complete":"Ожидаем подтверждения перевода","payments_web_no_sum":"Пожалуйста, выберите желаемое количество голосов.","reg0_change_mail":"Изменить","reg0_error_bad_email":"Некорректный email.","reports_thanks_for_report":"Спасибо, ваша жалоба принята.","settings_addrbox_hint":"В названии можно использовать латинские буквы, цифры и знак &quot;_&quot;","stories_bad_browser":"Истории не поддерживаются в вашем браузере","stories_mask_sent":"Маска отправлена на телефон","text_N_symbols_remain":["","Остался %s знак","Осталось %s знака","Осталось %s знаков"],"text_exceeds_symbol_limit":["","Допустимое количество символов превышено на %s знак","Допустимое количество символов превышено на %s знака","Допустимое количество символов превышено на %s знаков"],"votes_flex":["","голос","голоса","голосов"],"votes_transfer_choose_recipients":"Выберите получателя","votes_transfer_start_typing_recipient":"Начните вводить имя друга"}, false);
+addTemplates({"_":"_"});Docs.initDoc({"docOwnerId":487451001,"docId":650648288,"docExt":"png","docUrl":"https:\/\/psv4.userapi.com\/c237331\/u487451001\/docs\/d51\/7014033936b6\/11.png?extra=Rp3iEYrtaKJOG2yUGoPULoxszNaQWGjgRilUlr2Uk4as4I35crFfDZwwEaEZg72T_Hb1YhCzF2bC35Nd6psx7hFpinjWXykAhPO5ccTDFtketbYh4iXl5t2IDzP0GypFxWB8H7623JAX8L84Zaj7oSUd7Q","docBuyLink":"\/doclinks.php?link=&hash=c29555746f65cfaa6d3d6d8b142a4905&act=buy_from_preview_page&platform=web2"});Promise.resolve().then(() => {/*colorScheme*/(function(){"use strict";function o(o){var e=o.colorSchemeMode,c=o.isForcedColorSchemeMode,r=o.colorSchemesMap;if(window.colorScheme){var i=e;try{c&&(i=e,window.colorScheme.isModeSavingAllowed=!1)}catch(o){}window.colorScheme.init({mode:i,schemesMap:r})}}return o})()({"colorSchemeMode":"dark","colorSchemesMap":{"bright_light":"vkcom_light","space_gray":"vkcom_dark"}});}).catch((error) => { error.name = "[unsafeJs scheme] " + error.name; throw error });;
+      </script>
+    </noindex>
+  </body>
+</html>
