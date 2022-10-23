@@ -15,19 +15,19 @@ const Autorization = () => {
 
                             <div className="bott">
                                 <input type="radio" id="student" name="vbr" value="tudent" />
-                                <label for="student">Студент</label>
+                                <label htmlFor="student">Студент</label>
 
                                 <input type="radio" id="teacher" name="vbr" value="teacher" />
-                                <label for="teacher">Преподаватель</label>
+                                <label htmlFor="teacher">Преподаватель</label>
 
                                 <input type="radio" id="sotr" name="vbr" value="sotr" />
-                                <label for="sotr">Сотрудник</label>
+                                <label htmlFor="sotr">Сотрудник</label>
                             </div>
                             <div className="btAu">
                                 <NavLink to="/teacher">
                                     <img src="../../assets/Image/page/bt.svg" alt="facebook" />
                                 </NavLink>
-                                <NavLink to="/">
+                                <NavLink to="/noAccount">
                                     <p>Нет аккаунта</p>
                                 </NavLink>
                             </div>

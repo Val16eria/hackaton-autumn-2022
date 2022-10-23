@@ -85,7 +85,7 @@
     padding: 23px 73px 23px 56px;
 }
 
-.btnsQue #btnAdmin {
+.btnsQue #btnStud {
     text-decoration: none;
     box-sizing: border-box;
 
@@ -108,5 +108,5 @@
     color: #FDFDFD;
     font-family: "TTtravelsDemiBold";
     font-weight: 600px;
-    padding: 23px 73px 23px 56px;
+    padding: 23px 73px 23px 86px;
 }

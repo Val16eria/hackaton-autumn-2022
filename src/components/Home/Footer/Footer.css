@@ -4,14 +4,14 @@ footer {
     display: -ms-flex;
     -ms-align-items: center;
     align-items: center;
-    padding: 30px 40px 20px 40px;
+    padding: 30px 40px 100px 40px;
     justify-content: space-between;
     background-color: #272727;
     
 }
 
 .container3 {
-    justify-content:  space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -54,26 +54,4 @@ footer {
     color: #FDFDFD;
     font-size: 14px;
     font-family: "TTtravelsRegular";
-}
-
-/* ADAPTIVE */
-@media only screen and (max-width: 1100px) {
-    .logo2 {
-        padding-left: 35%;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    .logo2 {
-        padding-left: 35%;
-    }
-    .social {
-        float: right;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .logo2 {
-        padding-left: 20%;
-    }
 }
