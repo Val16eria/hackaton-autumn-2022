@@ -24,7 +24,7 @@ const Autorization = () => {
                                 <label htmlFor="sotr">Сотрудник</label>
                             </div>
                             <div className="btAu">
-                                <NavLink to="/teacher">
+                                <NavLink to="/sotr">
                                     <img src="../../assets/Image/page/bt.svg" alt="facebook" />
                                 </NavLink>
                                 <NavLink to="/noAccount">

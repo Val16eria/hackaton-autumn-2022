@@ -19,7 +19,7 @@ const Who = () => {
                         <NavLink id ="btnTeacher" to="/autoRegP" className="btnQue2">
                             Преподаватель
                         </NavLink>
-                        <NavLink id ="btnStud" to="/chat" className="btnQue3">
+                        <NavLink id ="btnStud" to="/autoRegS" className="btnQue3">
                             Студент
                         </NavLink>
                     </div>
