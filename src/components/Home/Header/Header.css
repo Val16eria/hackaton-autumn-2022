@@ -45,8 +45,13 @@ img {
 
 .mnu-top li {
     display: inline-block;
-    margin: 0 35px 0 35px;
+    margin: 0 35px;
 }
+
+/*.mnu-top li ~ li {
+    margin-left: 35px;
+    display: inline-block;
+}*/
 
 .mnu-top li a{
     display: block;
