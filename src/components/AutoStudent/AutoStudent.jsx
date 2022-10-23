@@ -15,7 +15,7 @@ const AutoStudent = () => {
                             <input type="password" name="password" placeholder="Пароль" id="passwordS"/>
                             <div className="btAuS">
                                 <NavLink to="/student">
-                                    <img src="../../assets/Image/page/bt.svg" alt="facebook" />
+                                    <input type="submit" src="../../assets/Image/page/bt.svg" alt="facebook" />
                                 </NavLink>
                             </div>
                         </form>

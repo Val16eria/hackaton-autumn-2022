@@ -16,6 +16,8 @@ import Who from "./components/Who/Who";
 import AutoOther from "./components/AutoOther/AutoOther";
 import SpisokSotr from "./components/SpisokSotr/SpisokSotr";
 import Chat from "./components/Chat/Chat";
+import Rosp from "./components/Rosp/Rosp";
+import AutoPrepod from "./components/AutoPrepod/AutoPrepod";
 
 
 // СТИЛИ
@@ -40,8 +42,10 @@ const App = () =>
               <Route path="/noAccount" element={<Who />}/>
               <Route path="/autoRegS" element={<AutoStudent />}/>
               <Route path="/autoRegP" element={<AutoOther />}/>
+              <Route path="/autoRegPrep" element={<AutoPrepod />}/>
               <Route path="/spisokSotr" element={<SpisokSotr />}/>
               <Route path="/chat" element={<Chat />}/>
+              <Route path="/rosp" element={<Rosp />}/>
             </Routes>
 
             

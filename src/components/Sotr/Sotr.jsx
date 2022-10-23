@@ -12,7 +12,7 @@ const Sotr = () => {
                         <h3>Сотрудник учебной части</h3>
                     </div>
                     <div className="space">
-                    <NavLink to="/rasp">
+                    <NavLink to="/rosp">
                         <img src="../../assets/Image/page/rosp.svg" alt="foto" id="Cards"/>
                     </NavLink>
                     <NavLink to="/brief">

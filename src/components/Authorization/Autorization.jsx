@@ -9,24 +9,24 @@ const Autorization = () => {
                     <div className="contAu">
                     <h2>Войти</h2>
                         <form>
-                            <input type="text" name="fio" placeholder="ФИО" id="fio"/>
-                            <input type="text" name="login" placeholder="Логин" id="login"/>
-                            <input type="password" name="password" placeholder="Пароль" id="password"/>
+                            <input type="text" name="fio" placeholder="ФИО" id="fio" required/>
+                            <input type="text" name="login" placeholder="Логин" id="login" required/>
+                            <input type="password" name="password" placeholder="Пароль" id="password" required/>
 
                             <div className="bott">
-                                <input type="radio" id="student" name="vbr" value="tudent" />
-                                <label htmlFor="student">Студент</label>
+                                <NavLink to="/student">
+                                    <label htmlFor="student">Студент</label>
+                                </NavLink>
 
-                                <input type="radio" id="teacher" name="vbr" value="teacher" />
-                                <label htmlFor="teacher">Преподаватель</label>
+                                <NavLink to="/teacher">
+                                    <label htmlFor="teacher">Преподаватель</label>
+                                </NavLink>
 
-                                <input type="radio" id="sotr" name="vbr" value="sotr" />
-                                <label htmlFor="sotr">Сотрудник</label>
+                                <NavLink to="/sotr">
+                                    <label htmlFor="sotr">Сотрудник</label>
+                                </NavLink>
                             </div>
                             <div className="btAu">
-                                <NavLink to="/sotr">
-                                    <img src="../../assets/Image/page/bt.svg" alt="facebook" />
-                                </NavLink>
                                 <NavLink to="/noAccount">
                                     <p>Нет аккаунта</p>
                                 </NavLink>

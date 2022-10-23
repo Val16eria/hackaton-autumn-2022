@@ -1,5 +1,5 @@
 /* CONTAINER */
-.rowAu {
+.rowAuPrep {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -8,7 +8,7 @@
     padding: 0 40px 0 40px;
 }
 
-.contAu {
+.contAuPrep {
     width: 532px;
     height: 549px;
     left: 0px;
@@ -21,7 +21,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.43);
 }
 
-.contAu h2{
+.contAuPrep h2{
     width: 109px;
     height: 52px;
     left: 483px;
@@ -36,13 +36,13 @@
     line-height: 52px;
     /* identical to box height */
 
-    margin: 47px auto 0 auto;
+    margin: 47px auto 0 170px;
 
     color: #000000;
 }
 
 
-form #fio{
+form #fioPrep{
     position: absolute;
     margin-left: 100px;
     box-sizing: border-box;
@@ -58,13 +58,13 @@ form #fio{
     margin: 0 auto;
 }
 
-form #login{
+form #doljPrep{
     position: absolute;
+    margin-left: 100px;
+    box-sizing: border-box;
     margin: 0 auto;
 
-    box-sizing: border-box;
-
-
+    position: absolute;
     width: 351px;
     height: 50px;
     left: 580px;
@@ -75,10 +75,12 @@ form #login{
     border-radius: 74.5px;
 }
 
-form #password{
+form #loginPrep{
     position: absolute;
     margin: 0 auto;
+
     box-sizing: border-box;
+
 
     width: 351px;
     height: 50px;
@@ -90,7 +92,22 @@ form #password{
     border-radius: 74.5px;
 }
 
-.btAu {
+form #passwordPrep{
+    position: absolute;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    width: 351px;
+    height: 50px;
+    left: 580px;
+    top: 490px;
+
+    background: #FFFFFF;
+    border: 2px solid #A9A9A9;
+    border-radius: 74.5px;
+}
+
+.btAuPrep {
     position: absolute;
     width: 76px;
     height: 73px;
@@ -98,37 +115,3 @@ form #password{
     top: 560px;
 }
 
-.bott {
-    position: absolute;
-    top: 490px;
-    margin: 10px 100px;
-}
-
-.bott label{
-    font-family: 'TTtravelsRegular';
-    margin: 0 20px;
-}
-
-::-webkit-input-placeholder {
-    text-align:center;
-    }
-    
-:-moz-placeholder { /* Firefox 18- */
-    text-align:center;  
-}
-    
-::-moz-placeholder {  /* Firefox 19+ */
-    text-align:center;  
-}
-    
-:-ms-input-placeholder {  
-    text-align:center; 
-}
-
-form a {
-    text-decoration: none;
-    font-size: 11px;
-    width: 90px;
-    font-family: "TTtravelsRegular";
-    color: #727272;
-}
