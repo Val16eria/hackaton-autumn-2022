@@ -19,7 +19,7 @@ const Question = () => {
                         <NavLink id ="btnTeacher" to="/spisokSotr" className="btnQue2">
                             Преподаватель
                         </NavLink>
-                        <NavLink id ="btnAdmin" to="/chatAdmin" className="btnQue3">
+                        <NavLink id ="btnAdmin" to="/chat" className="btnQue3">
                             Администратор
                         </NavLink>
                     </div>
